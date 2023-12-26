@@ -5,19 +5,34 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Welcome to Astro.">
 	<main class="text-slate-950 w-full min-h-fit bg-[#E6E0EF]">
-		<div
-			class="w-[100%] gap-3 pt-0 [grid-template-rows:auto_auto_1fr] grid-cols-1 h-auto  md:w-auto md:h-[100vh] relative grid md:grid-rows-1 md:[grid-template-columns:30%_1fr]"
-		>
+		<div class="w-[100%] h-[100vh] relative grid grid-cols-1 grid-rows-[35%_1fr] sm:grid-cols-2 sm:grid-rows-1 bg-white">
 			<img
-				src="./imgs/LOGO.png"
-				class="absolute left-2 top-2 h-20"
+				src="imgs/background.jpg"
+				class="absolute left-0 top-0 h-full w-full z-0 object-cover opacity-20"
 				alt=""
 			/>
 
-			<div class="flex items-end pt-24 md:pt-0 pb-3 px-2 bg-[#f7af9d]">
-				<p>
+			<img
+				src="./imgs/LOGO.png"
+				class="absolute left-2 top-2 h-20 z-[5]"
+				alt=""
+			/>
+			<div class="flex items-end justify-center">
+				<img
+				src="./imgs/VectorImage.jpg"
+				class="max-h-[90%] max-w-[90%] object-cover z-[1]"
+				style="opacity: .9; box-shadow: 0 0 20px 20px #fff; "
+				alt=""
+				/>
+			</div>
+			<div class="flex flex-col justify-center pe-7 gap-10 z-[1]">
+				<p class="text-2xl text-center sm:text-left sm:text-4xl font-bold text-gray-800">
+					Descubre el Futuro de la Ingeniería Civil con KAOLYN
+					INGENIEROS SAC
+				</p>
+				<p class="text-base text-teal-950 pe-2 sm:pe-20 border-s-2 border-orange-600 ps-3 ms-4">
 					Somos una firma líder en consultoría e ingeniería civil con
-					sede en Cajamarca, Perú. En Kaolyn Ingenieros, nos
+					sede en Cajamarca, Perú. En Kaolyn Ingenieros SAC, nos
 					especializamos en una amplia gama de servicios que abarcan
 					desde consultoría hasta la ejecución de obras civiles,
 					topografía, mecánica de suelos y saneamiento de terrenos.
@@ -26,19 +41,8 @@ import Layout from "../layouts/Layout.astro";
 					proyecto.
 				</p>
 			</div>
-			<p
-				class="h-fit p-0 text-center md:text-left md:absolute md:top-[20%] md:left-[10%] text-3xl md:max-w-[600px] font-semibold font-serif"
-			>
-				Descubre el Futuro de la Ingeniería Civil con Kaolyn Ingenieros
-			</p>
-			<div class="overflow-hidden flex items-center justify-center  md:items-end md:justify-end">
-				<img
-					src="./imgs/VectorImage.png"
-					class="max-h-[90%] max-w-[90%] object-cover"
-					alt=""
-				/>
-			</div>
 		</div>
+
 		<p class="text-center mt-10 text-xl font-bold">Nuestros servicios</p>
 		<div class="h-fit flex flex-wrap px-10 gap-10 justify-center py-8">
 			<CardService
