@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string,
+	info: string,
+	img: string
+}
+
+const { title, info, img } = Astro.props;
+---
+
+<div class="group grid rounded-xl gap-3 w-60 p-2 bg-[#FFC690]" style="grid-template-rows: auto auto auto">
+    <p class="text-center font-semibold text-lg">{title}</p>
+    <p class="text-base">{info}</p>
+    <img src={img} class="rounded-lg" alt="">
+</div>

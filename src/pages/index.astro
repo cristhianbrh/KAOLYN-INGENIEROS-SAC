@@ -1,0 +1,212 @@
+---
+import CardService from "../components/CardService.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="text-slate-950 w-full min-h-fit bg-[#E6E0EF]">
+		<div
+			class="w-[100%] gap-3 pt-0 [grid-template-rows:auto_auto_1fr] grid-cols-1 h-auto  md:w-auto md:h-[100vh] relative grid md:grid-rows-1 md:[grid-template-columns:30%_1fr]"
+		>
+			<img
+				src="./imgs/LOGO.png"
+				class="absolute left-2 top-2 h-20"
+				alt=""
+			/>
+
+			<div class="flex items-end pt-24 md:pt-0 pb-3 px-2 bg-[#f7af9d]">
+				<p>
+					Somos una firma líder en consultoría e ingeniería civil con
+					sede en Cajamarca, Perú. En Kaolyn Ingenieros, nos
+					especializamos en una amplia gama de servicios que abarcan
+					desde consultoría hasta la ejecución de obras civiles,
+					topografía, mecánica de suelos y saneamiento de terrenos.
+					Desde nuestra fundación en 2012, hemos demostrado nuestro
+					compromiso con la excelencia y la innovación en cada
+					proyecto.
+				</p>
+			</div>
+			<p
+				class="h-fit p-0 text-center md:text-left md:absolute md:top-[20%] md:left-[10%] text-3xl md:max-w-[600px] font-semibold font-serif"
+			>
+				Descubre el Futuro de la Ingeniería Civil con Kaolyn Ingenieros
+			</p>
+			<div class="overflow-hidden flex items-center justify-center  md:items-end md:justify-end">
+				<img
+					src="./imgs/VectorImage.png"
+					class="max-h-[90%] max-w-[90%] object-cover"
+					alt=""
+				/>
+			</div>
+		</div>
+		<p class="text-center mt-10 text-xl font-bold">Nuestros servicios</p>
+		<div class="h-fit flex flex-wrap px-10 gap-10 justify-center py-8">
+			<CardService
+				title="Consultoría Integral"
+				info="Ofrecemos asesoramiento experto en proyectos de ingeniería civil, brindando soluciones personalizadas y eficientes."
+				img="https://cruzialseo.com/wp-content/uploads/2023/01/como-captar-clientes-para-una-empresa-constructora.jpg"
+			/>
+			<CardService
+				title="Topografía Avanzada"
+				info="Utilizamos tecnología de vanguardia para proporcionar datos precisos y detallados sobre terrenos y entornos."
+				img="https://cruzialseo.com/wp-content/uploads/2023/01/como-captar-clientes-para-una-empresa-constructora.jpg"
+			/>
+			<CardService
+				title="Mecánica de Suelos"
+				info="Evaluamos y analizamos la composición del suelo para garantizar la estabilidad y seguridad de las estructuras."
+				img="https://cruzialseo.com/wp-content/uploads/2023/01/como-captar-clientes-para-una-empresa-constructora.jpg"
+			/>
+			<CardService
+				title="Ejecución de Obras Civiles"
+				info="Desde diseño hasta construcción, materializamos tus proyectos con calidad y profesionalismo."
+				img="https://cruzialseo.com/wp-content/uploads/2023/01/como-captar-clientes-para-una-empresa-constructora.jpg"
+			/>
+			<CardService
+				title="Saneamiento de Terrenos"
+				info="Implementamos estrategias efectivas para el tratamiento y preparación de terrenos, optimizando su uso."
+				img="https://cruzialseo.com/wp-content/uploads/2023/01/como-captar-clientes-para-una-empresa-constructora.jpg"
+			/>
+		</div>
+		<div
+			class="h-fit text-center px-10 py-7 flex flex-col gap-8 bg-slate-50"
+		>
+			<p class="text-xl font-bold">Compromiso con la Excelencia</p>
+			<p>
+				En Kaolyn Ingenieros, nuestra fuerza radica en nuestro equipo
+				altamente capacitado y comprometido. Con 2-10 empleados y 5
+				miembros asociados, reunimos experiencia y dedicación para
+				ofrecer resultados superiores. Además, estamos respaldados por
+				una red de profesionales destacados en LinkedIn que respaldan
+				nuestra trayectoria y compromiso con la calidad.
+			</p>
+		</div>
+		<div
+			class="h-fit grid grid-rows-2 grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 pt-6 gap-4"
+		>
+			<div class="flex flex-col px-3">
+				<p class="text-center font-semibold text-base">Encuentranos</p>
+				<p>
+					Estamos aquí para convertir tus ideas en realidades
+					concretas. Únete a Kaolyn Ingenieros, donde la excelencia y
+					la innovación se unen para crear un futuro sólido y
+					sostenible en la ingeniería civil.
+				</p>
+				<div class="h-fit relative">
+					<img class="" src="./imgs/googleMaps.png" alt="" />
+					<img
+						class="absolute top-0 left-0 h-[70%] rounded-md"
+						src="./imgs/ubicacion qr.png"
+						alt=""
+					/>
+					<p>Jr. Paraíso Nro. 120, Cajamarca PE</p>
+				</div>
+			</div>
+			<form
+				class="grid gap-4 font-semibold text-base px-3"
+				style="grid-template-rows: auto auto 1fr auto auto"
+			>
+				<p class="text-center">Contáctanos</p>
+				<input
+					type="text"
+					class="rounded-full py-2 px-3"
+					placeholder="Correo"
+				/>
+				<textarea class="rounded-xl py-2 px-3" placeholder="Consulta"
+				></textarea>
+				<button
+					class="bg-[#FF9900] m-auto rounded-lg text-slate-50 w-fit py-1 px-16 hover:scale-[1.1] transition-[1s] cursor-pointer"
+					>Enviar</button
+				>
+				<div class="flex gap-10 justify-center">
+					<a href="https://www.facebook.com/KAOLYNINGENIEROS/">
+						<svg
+							class="hover:scale-[1.1] transition-[1s] cursor-pointer"
+							xmlns="http://www.w3.org/2000/svg"
+							width="40"
+							height="40"
+							viewBox="0 0 66 65"
+							fill="none"
+						>
+							<g clip-path="url(#clip0_10_91)">
+								<path
+									d="M65.5 32.5C65.5 14.5509 50.9491 0 33 0C15.0509 0 0.5 14.5509 0.5 32.5C0.5 48.7216 12.3848 62.1672 27.9219 64.6052V41.8945H19.6699V32.5H27.9219V25.3398C27.9219 17.1945 32.774 12.6953 40.1977 12.6953C43.7534 12.6953 47.4727 13.3301 47.4727 13.3301V21.3281H43.3746C39.3372 21.3281 38.0781 23.8334 38.0781 26.4037V32.5H47.0918L45.6509 41.8945H38.0781V64.6052C53.6152 62.1672 65.5 48.7218 65.5 32.5Z"
+									fill="#1877F2"></path>
+								<path
+									d="M45.6509 41.8945L47.0918 32.5H38.0781V26.4037C38.0781 23.8332 39.3372 21.3281 43.3746 21.3281H47.4727V13.3301C47.4727 13.3301 43.7534 12.6953 40.1975 12.6953C32.774 12.6953 27.9219 17.1945 27.9219 25.3398V32.5H19.6699V41.8945H27.9219V64.6052C29.6018 64.8684 31.2996 65.0004 33 65C34.7004 65.0005 36.3982 64.8685 38.0781 64.6052V41.8945H45.6509Z"
+									fill="white"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_10_91">
+									<rect
+										width="65"
+										height="65"
+										fill="white"
+										transform="translate(0.5)"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<a href="">
+						<svg
+							class="hover:scale-[1.1] transition-[1s] cursor-pointer"
+							xmlns="http://www.w3.org/2000/svg"
+							width="40"
+							height="40"
+							viewBox="0 0 66 65"
+							fill="none"
+						>
+							<g clip-path="url(#clip0_10_94)">
+								<path
+									d="M1.88713 32.111C1.88561 37.5722 3.32374 42.9047 6.05831 47.6049L1.62561 63.6639L18.1884 59.3548C22.7695 61.8293 27.9022 63.126 33.1181 63.1263H33.1318C50.3505 63.1263 64.3669 49.2236 64.3742 32.1354C64.3775 23.855 61.1306 16.0686 55.2313 10.2105C49.3331 4.35294 41.4886 1.12536 33.1306 1.12158C15.9099 1.12158 1.8945 15.0235 1.88739 32.111"
+									fill="url(#paint0_linear_10_94)"></path>
+								<path
+									d="M0.77168 32.1009C0.769902 37.7587 2.25957 43.2819 5.09164 48.1504L0.5 64.7851L17.6567 60.3215C22.3839 62.8789 27.7063 64.2273 33.1221 64.2293H33.1361C50.9725 64.2293 65.4924 49.8265 65.5 32.1266C65.503 23.5486 62.1393 15.4823 56.0293 9.41442C49.9185 3.34725 41.7935 0.00352713 33.1361 0C15.2966 0 0.778789 14.4008 0.77168 32.1009ZM10.9891 47.3119L10.3485 46.3029C7.65559 42.0542 6.23422 37.1445 6.23625 32.1029C6.24184 17.391 18.3085 5.42171 33.1463 5.42171C40.3318 5.42473 47.0847 8.20411 52.1638 13.2469C57.2427 18.2902 60.0375 24.9943 60.0357 32.1246C60.0291 46.8365 47.9622 58.8074 33.1361 58.8074H33.1254C28.2979 58.8048 23.5633 57.5184 19.4343 55.0875L18.4517 54.5093L8.27055 57.1579L10.9891 47.3119Z"
+									fill="url(#paint1_linear_10_94)"></path>
+								<path
+									d="M25.0471 18.6807C24.4413 17.3447 23.8037 17.3177 23.2276 17.2943C22.7558 17.2741 22.2165 17.2757 21.6778 17.2757C21.1385 17.2757 20.2622 17.477 19.5216 18.2794C18.7802 19.0826 16.691 21.0235 16.691 24.9711C16.691 28.919 19.5889 32.7341 19.9928 33.2699C20.3973 33.8048 25.5872 42.1651 33.8066 45.3814C40.6377 48.0542 42.0278 47.5226 43.5104 47.3885C44.9932 47.255 48.295 45.4481 48.9686 43.5745C49.6427 41.701 49.6427 40.0952 49.4406 39.7596C49.2385 39.4253 48.6992 39.2245 47.8905 38.8234C47.0816 38.4221 43.1059 36.4809 42.3648 36.2131C41.6234 35.9455 41.0843 35.812 40.545 36.6154C40.0057 37.4176 38.4572 39.2245 37.9851 39.7596C37.5136 40.296 37.0416 40.3628 36.2332 39.9614C35.424 39.5588 32.8197 38.7126 29.7299 35.9793C27.3259 33.8524 25.7029 31.226 25.2312 30.4225C24.7594 29.6204 25.1807 29.1855 25.5861 28.7857C25.9495 28.4262 26.3951 27.8487 26.7998 27.3804C27.203 26.9118 27.3376 26.5775 27.6072 26.0423C27.8771 25.5067 27.7421 25.0381 27.5402 24.6368C27.3376 24.2354 25.7662 20.2672 25.0471 18.6807Z"
+									fill="white"></path>
+							</g>
+							<defs>
+								<linearGradient
+									id="paint0_linear_10_94"
+									x1="3139.06"
+									y1="6255.36"
+									x2="3139.06"
+									y2="1.12158"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop stop-color="#1FAF38"></stop>
+									<stop offset="1" stop-color="#60D669"
+									></stop>
+								</linearGradient>
+								<linearGradient
+									id="paint1_linear_10_94"
+									x1="3250.5"
+									y1="6478.51"
+									x2="3250.5"
+									y2="0"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop stop-color="#F9F9F9"></stop>
+									<stop offset="1" stop-color="white"></stop>
+								</linearGradient>
+								<clipPath id="clip0_10_94">
+									<rect
+										width="65"
+										height="65"
+										fill="white"
+										transform="translate(0.5)"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</form>
+		</div>
+		<p class="text-center text-sm font-semibold py-5 text-slate-600">
+			&copy; 2023 Kaolyn Ingenieros SAC
+		</p>
+	</main>
+</Layout>
+
+<style></style>
